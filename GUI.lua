@@ -1,10 +1,3 @@
---[[
-    ╔══════════════════════════════════════════════════════╗
-    ║           NEXUS HUB - Universal GUI v2.0            ║
-    ║     Features: Fly, WalkSpeed, Infinite Jump,        ║
-    ║     Gravity Control, Player Info                     ║
-    ╚══════════════════════════════════════════════════════╝
-]]
 
 -- Services
 local Players = game:GetService("Players")
