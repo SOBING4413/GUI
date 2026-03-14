@@ -206,7 +206,7 @@ pnpm run lint
 
 ## 📄 Lisensi
 
-Project ini dibuat oleh **Sobing4413**. Silakan hubungi pembuat untuk informasi lisensi.
+Project ini digarap oleh **Sobing4413**. Silakan hubungi pembuat untuk informasi lisensi.
 
 ---
 
