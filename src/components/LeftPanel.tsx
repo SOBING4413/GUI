@@ -31,7 +31,7 @@ export default function LeftPanel({
 
   return (
     <div
-      className="w-[220px] flex-shrink-0 rounded-xl p-2 flex flex-col gap-2 border"
+      className="w-[220px] flex-shrink-0 rounded-xl p-2 flex flex-col gap-2 border hidden sm:flex"
       style={{
         background: `linear-gradient(160deg, #141622 0%, #0E1018 100%)`,
         borderColor: "rgba(35, 38, 48, 0.8)",
