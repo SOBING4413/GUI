@@ -23,7 +23,7 @@
 
 **KBBI Sambung Kata GUI** adalah antarmuka grafis modern untuk membantu pemain dalam permainan **Sambung Kata** — sebuah permainan kata populer di mana pemain harus menyebutkan kata yang dimulai dengan huruf terakhir dari kata sebelumnya.
 
-Aplikasi ini dilengkapi dengan **48.291 kata** dari Kamus Besar Bahasa Indonesia (KBBI), sistem penilaian tingkat bahaya kata, dan fitur auto-answer cerdas.
+Aplikasi ini dilengkapi dengan **101.753 kata** dari Kamus Besar Bahasa Indonesia (KBBI), sistem penilaian tingkat bahaya kata, dan fitur auto-answer cerdas.
 
 ---
 
