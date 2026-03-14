@@ -100,7 +100,7 @@ src/
 
 ## 🚀 Memulai
 
-### Prasyarat
+### dependencies
 
 - [Node.js](https://nodejs.org/) v18+
 - [pnpm](https://pnpm.io/) v8+
