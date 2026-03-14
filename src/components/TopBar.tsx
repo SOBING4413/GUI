@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Theme, themes, themeOrder } from "@/lib/themes";
 
 interface TopBarProps {
@@ -24,6 +24,8 @@ export default function TopBar({
 }: TopBarProps) {
   const [showThemePanel, setShowThemePanel] = useState(false);
   const [currentThemeName, setCurrentThemeName] = useState("Biru");
+  const themePanelRef = useRef<HTMLDivElement>(null);
+  const themeButtonRef = useRef<HTMLButtonElement>(null);
 
   const handleThemeSelect = (name: string) => {
     setCurrentThemeName(name);
@@ -31,8 +33,27 @@ export default function TopBar({
     setShowThemePanel(false);
   };
 
+  // Close theme panel when clicking outside
+  useEffect(() => {
+    if (!showThemePanel) return;
+
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        themePanelRef.current &&
+        !themePanelRef.current.contains(e.target as Node) &&
+        themeButtonRef.current &&
+        !themeButtonRef.current.contains(e.target as Node)
+      ) {
+        setShowThemePanel(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [showThemePanel]);
+
   return (
-    <>
+    <div className="relative">
       {/* Top Bar */}
       <div
         className="relative h-12 flex items-center px-3 rounded-t-2xl z-10"
@@ -126,6 +147,7 @@ export default function TopBar({
 
           {/* Theme */}
           <button
+            ref={themeButtonRef}
             onClick={() => setShowThemePanel(!showThemePanel)}
             className="w-[30px] h-[30px] rounded-lg text-[12px] flex items-center justify-center transition-all duration-200 hover:text-white"
             style={{
@@ -186,6 +208,7 @@ export default function TopBar({
       {/* Theme Panel */}
       {showThemePanel && (
         <div
+          ref={themePanelRef}
           className="absolute right-4 top-14 w-[200px] rounded-xl z-50 overflow-hidden border"
           style={{
             backgroundColor: "#12141C",
@@ -224,6 +247,6 @@ export default function TopBar({
           })}
         </div>
       )}
-    </>
+    </div>
   );
 }
