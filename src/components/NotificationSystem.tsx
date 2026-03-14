@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 export interface Notification {
   id: number;
@@ -46,12 +46,12 @@ interface NotificationSystemProps {
 
 export function useNotifications() {
   const [notifications, setNotifications] = useState<Notification[]>([]);
-  let counter = 0;
+  const counterRef = useRef(0);
 
   const sendNotification = useCallback(
     (type: string, title: string, message: string, duration = 3.5) => {
-      counter++;
-      const id = Date.now() + counter;
+      counterRef.current++;
+      const id = Date.now() + counterRef.current;
       const notif: Notification = {
         id,
         type,
@@ -83,7 +83,7 @@ export default function NotificationSystem({
   onDismiss,
 }: NotificationSystemProps) {
   return (
-    <div className="fixed top-3 right-3 z-[200] flex flex-col gap-2 w-[310px]">
+    <div className="fixed top-3 right-3 z-[200] flex flex-col gap-2 w-[310px] max-w-[calc(100vw-24px)]">
       {notifications.map((notif) => (
         <NotificationCard key={notif.id} notif={notif} onDismiss={onDismiss} />
       ))}
