@@ -12,7 +12,7 @@
 <br />
 
 <img src="https://img.shields.io/badge/version-v3.0-3782F0?style=for-the-badge&labelColor=0A1023" alt="Version" />
-<img src="https://img.shields.io/badge/kata-48%2C291-28C864?style=for-the-badge&labelColor=0A1E10" alt="Words" />
+<img src="https://img.shields.io/badge/kata-101%2C753-28C864?style=for-the-badge&labelColor=0A1E10" alt="Words" />
 <img src="https://img.shields.io/badge/by-Sobing4413-9646EB?style=for-the-badge&labelColor=160A26" alt="Author" />
 
 </div>
