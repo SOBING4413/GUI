@@ -12,7 +12,7 @@
 <br />
 
 <img src="https://img.shields.io/badge/version-v3.0-3782F0?style=for-the-badge&labelColor=0A1023" alt="Version" />
-<img src="https://img.shields.io/badge/kata-101%2C753-28C864?style=for-the-badge&labelColor=0A1E10" alt="Words" />
+<img src="https://img.shields.io/badge/kata-181%2C651-28C864?style=for-the-badge&labelColor=0A1E10" alt="Words" />
 <img src="https://img.shields.io/badge/by-Sobing4413-9646EB?style=for-the-badge&labelColor=160A26" alt="Author" />
 
 </div>
@@ -23,7 +23,7 @@
 
 **KBBI Sambung Kata GUI** adalah antarmuka grafis modern untuk membantu pemain dalam permainan **Sambung Kata** — sebuah permainan kata populer di mana pemain harus menyebutkan kata yang dimulai dengan huruf terakhir dari kata sebelumnya.
 
-Aplikasi ini dilengkapi dengan **101.753 kata** dari Kamus Besar Bahasa Indonesia (KBBI), sistem penilaian tingkat bahaya kata, dan fitur auto-answer cerdas.
+Aplikasi ini dilengkapi dengan **181.651 kata** dari Kamus Besar Bahasa Indonesia (KBBI), sistem penilaian tingkat bahaya kata, dan fitur auto-answer cerdas.
 
 ---
 
